@@ -25,7 +25,7 @@ const CompletedTaskPage = async () => {
       </header>
       <div className="mt-8 flex flex-wrap gap-4">
         {completedTasks.map((task) => (
-          <TaskCard key={task._id} task={task} />
+          <TaskCard key={task._id as string} task={task} />
         ))}
       </div>
     </div>
